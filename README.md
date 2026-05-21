@@ -32,7 +32,7 @@ Pipeline:
 | Mixed Journey | 15.92ms | 0.00% | [View](assets/mixedJourney_test.png) |
 | Endurance Test | 14.28ms | 0.00% | [View](assets/endurance_test.png) |
 
-> **Note:** All results are based on a mock API (jsonplaceholder.typicode.com). The objective of this project is to demonstrate a K6 performance testing framework, CI/CD integration, and SLA validation rather than testing production infrastructure.
+> **Note:** All results are based on a mock API (jsonplaceholder.typicode.com). The objective of this project is to demonstrate a k6 performance testing framework, CI/CD integration, and SLA validation rather than testing production infrastructure.
 
 ## Tech Stack
 
