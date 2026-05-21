@@ -1,0 +1,29 @@
+name: Performance Test
+
+on: [push]
+
+jobs:
+
+  performance:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Install K6
+
+        run: |
+          
+          sudo gpg -k
+          
+          sudo apt update
+          
+          sudo snap install k6
+
+      - name: Run Load Test
+
+        run: |
+          
+          k6 run scripts/loadLogin.js
