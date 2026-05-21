@@ -1,10 +1,10 @@
 # Performance Test Framework - k6
 
-A K6-based performance testing framework designed to validate system reliability and scalability under different traffic conditions such as load, stress, spike, mixed user journeys, and endurance testing. The project includes SLA validation and CI/CD integration using GitHub Actions.
+A k6-based performance testing framework designed to validate system reliability and scalability under different traffic conditions such as load, stress, spike, mixed user journeys, and endurance testing. The project includes SLA validation and CI/CD integration using GitHub Actions.
 
 ## Features
 
-- Load Testing using K6
+- Load Testing using k6
 - Stress Testing to find system breaking point
 - Spike Testing for sudden traffic bursts
 - Mixed User Journey simulation
@@ -17,7 +17,7 @@ Performance tests execute automatically using GitHub Actions whenever code is pu
 
 Pipeline:
 
-- Installs K6
+- Installs k6
 - Executes all test scenarios
 - Validates SLA thresholds
 - Ensures no performance regression is introduced
