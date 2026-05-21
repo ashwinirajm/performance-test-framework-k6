@@ -20,12 +20,12 @@ Pipeline:
 - Validates SLA thresholds
 - Ensures no performance regression is introduced
 
-## Sample SLA Targets
 
-| Metric | Target |
-|---------|---------|
-| P95 Response Time | < 500 ms |
-| Failure Rate | < 2% |
+## Load Test Result
+
+![Load Test](assets/load-test-result.png)
+
+
 
 ## Tech Stack
 
