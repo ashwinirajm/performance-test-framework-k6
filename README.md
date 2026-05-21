@@ -23,7 +23,7 @@ Pipeline:
 
 ## Load Test Result
 
-![Load Test](assets/load-test-result.png)
+![Load Test](assets/load_test.png)
 
 
 
