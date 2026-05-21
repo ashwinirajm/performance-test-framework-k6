@@ -1,29 +1,47 @@
-name: Performance Test
+name: K6 Performance Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
 
 jobs:
 
-  performance:
+  performance-test:
 
     runs-on: ubuntu-latest
 
     steps:
 
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Install K6
-
         run: |
-          
+
           sudo gpg -k
-          
-          sudo apt update
-          
           sudo snap install k6
 
       - name: Run Load Test
-
         run: |
-          
           k6 run scripts/loadLogin.js
+
+      - name: Run Stress Test
+        run: |
+          k6 run scripts/stressSearch.js
+
+      - name: Run Spike Test
+        run: |
+          k6 run scripts/spikeTraffic.js
+
+      - name: Run Mixed Journey Test
+        run: |
+          k6 run scripts/mixedJourney.js
+
+      - name: Run Endurance Test
+        run: |
+          k6 run scripts/enduranceTest.js
