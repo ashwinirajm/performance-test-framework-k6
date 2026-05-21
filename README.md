@@ -36,7 +36,7 @@ Pipeline:
 
 ## Tech Stack
 
-- K6
+- k6
 - JavaScript
 - GitHub Actions
 
