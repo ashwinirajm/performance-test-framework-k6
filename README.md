@@ -1,5 +1,7 @@
 # Performance Test Framework - K6
 
+A K6-based performance testing framework designed to validate system reliability and scalability under different traffic conditions such as load, stress, spike, mixed user journeys, and endurance testing. The project includes SLA validation and CI/CD integration using GitHub Actions.
+
 ## Features
 
 - Load Testing using K6
@@ -20,12 +22,17 @@ Pipeline:
 - Validates SLA thresholds
 - Ensures no performance regression is introduced
 
+## Performance Test Results Summary
 
-## Load Test Result
+| Test Type | P95 Response Time | Failure Rate | Evidence |
+|------------|------------------|--------------|----------|
+| Load Test | 200ms | 0.5% | [View](assets/load-test.png) |
+| Stress Test | 510ms | 2.2% | [View](assets/stress-test.png) |
+| Spike Test | 150ms | 0.7% | [View](assets/spike-test.png) |
+| Mixed Journey | 286ms | 0.7% | [View](assets/mixed-test.png) |
+| Endurance Test | 197ms | 1.21% | [View](assets/endurance-test.png) |
 
-![Load Test](assets/load_test.png)
-
-
+![Performance Summary](assets/)
 
 ## Tech Stack
 
